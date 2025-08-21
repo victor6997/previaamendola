@@ -1171,6 +1171,7 @@ section.card {
   overflow: hidden;
   perspective: 1000px;
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform, box-shadow;
 }
 .card svg {
   fill: #000;
@@ -1178,8 +1179,8 @@ section.card {
   border-radius: 3px;
 }
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px #000000;
+  transform: translateZ(0) scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
   background-color: #f2f2f2;
   color: #ffffff;
 }
@@ -1220,4 +1221,9 @@ section.card {
   font-size: 14px;
   color: #000000;
   line-height: 1.4;
+}
+
+.card {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
