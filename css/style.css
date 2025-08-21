@@ -35,7 +35,7 @@ h6 {
   padding: 0;
 }
 
-/* Back to top button */
+/* Back to top button (botão de voltar ao topo) */
 
 .back-to-top {
   position: fixed;
@@ -59,7 +59,7 @@ h6 {
   color: #005352;
 }
 
-/* Prelaoder */
+/* Prelaoder (Pré-carregador) */
 
 #preloader {
   position: fixed;
@@ -157,7 +157,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Intro
+# Intro(
 --------------------------------------------------------------*/
 
 #intro {
@@ -238,7 +238,7 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation Menu (menu de navegação)
 --------------------------------------------------------------*/
 
 .main-nav,
@@ -336,7 +336,7 @@ h6 {
   right: 15px;
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation (mexer pelo celular) */
 
 .mobile-nav {
   position: fixed;
@@ -445,7 +445,7 @@ h6 {
 # sobre nós
 --------------------------------------------------------------*/
 
-/* Sections Header
+/* Sections Header (Cabeçalho das seções)
 --------------------------------*/
 
 .section-header h3 {
@@ -465,14 +465,14 @@ h6 {
   width: 50%;
 }
 
-/* Section with background
+/* Section with background (Seção com fundo)
 --------------------------------*/
 
 .section-bg {
   background: #ffffff;
 }
 
-/* About Us Section
+/* About Us Section (Seção Sobre nós)
 --------------------------------*/
 
 #about {
@@ -575,7 +575,7 @@ h6 {
   font-size: 24px;
 }
 
-/* sistemas
+/* Sistemas
 --------------------------------*/
 
 #services {
@@ -732,7 +732,7 @@ h6 {
 #why-us .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* ou space-between */
+  justify-content: space-between; /* ou space-between (espaço entre) */
   gap: 1px;
 }
 
@@ -1070,7 +1070,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Responsive Media Queries
+# Responsive Media Queries (Consultas de mídia responsivas)
 --------------------------------------------------------------*/
 
 @media (min-width: 992px) {
