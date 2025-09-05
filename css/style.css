@@ -40,8 +40,8 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #000000;
-  color: #941414;
+  background: #005352;
+  color: #ffffff;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -56,57 +56,112 @@ h6 {
 
 .back-to-top i {
   padding-top: 12px;
-  color: #005352;
+  color: #ffffff;
+}
+.back-to-top:hover{
+  background: #003837;
 }
 
 /* Prelaoder (Pré-carregador) */
 
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #000000;
+/* From Uiverse.io by BlackisPlay */ 
+.cls-1 {
+  fill: #f15a24;
+  animation: cls1 4s ease infinite both;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-top: 6px solid #ffffff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
+@keyframes cls1 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    fill: #f15a24;
+  }
+
+  34% {
+    fill: #ed1c24;
+  }
+
+  66% {
+    fill: #f7931e;
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    fill: #f15a24;
   }
 }
 
-@keyframes animate-preloader {
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #f7931e;
+  animation: cls2 4s ease infinite both;
+}
+
+@keyframes cls2 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    fill: #f7931e;
+  }
+
+  34% {
+    fill: #f15a24;
+  }
+
+  66% {
+    fill: #ed1c24;
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    fill: #f7931e;
+  }
+}
+
+.cls-3 {
+  fill: #ed1c24;
+  animation: cls3 4s ease infinite both;
+}
+
+@keyframes cls3 {
+  0% {
+    fill: #ed1c24;
+  }
+
+  34% {
+    fill: #f7931e;
+  }
+
+  66% {
+    fill: #f15a24;
+  }
+
+  100% {
+    fill: #ed1c24;
+  }
+}
+
+.cls-4 {
+  display: none;
+}
+
+#triangle {
+  height: 400px;
+  width: 400px;
+  padding-top: 30px;
+  animation: triangle 4s both infinite;
+}
+
+@keyframes triangle {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -900,26 +955,23 @@ h6 {
   border: 1px solid #007bff;
 }
  
-#contact .social-links a:hover {
-  background: #007bff;
-  color: #fff;
-}
  
 #contact .info {
-  color: #283d50;
+  color: #000000;
+  display: flex;
+  font-size: 100px;
 }
  
 #contact .info i {
   font-size: 32px;
   color: #007bff;
   float: left;
-  line-height: 1;
 }
  
 #contact .info p {
-  padding: 0 0 10px 36px;
+  padding: 10px 10px 50px 7px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 20px;
 }
  
 /*--------------------------------------------------------------
@@ -928,7 +980,7 @@ h6 {
 
 #footer {
   background: #FD7A02;
-  padding: 0 0 30px 0;
+  padding: 0px 0px 30px 0px;
   color: #eee;
   font-size: 14px;
 }
@@ -952,14 +1004,6 @@ h6 {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 13px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #ecf5ff;
 }
 
 #footer .footer-top .social-links a {
@@ -991,64 +1035,6 @@ h6 {
   padding-bottom: 10px;
 }
 
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 8px 0;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #ecf5ff;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  color: #ffffff;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-
-#footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-newsletter input[type="email"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #005352;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #003f3e;
-}
 
 #footer .copyright {
   text-align: center;
@@ -1061,13 +1047,6 @@ h6 {
   color: #f1f7ff;
 }
 
-#footer .credits a {
-  color: #bfddfe;
-}
-
-#footer .credits a:hover {
-  color: #f1f7ff;
-}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries (Consultas de mídia responsivas)
@@ -1152,78 +1131,4 @@ h6 {
   #intro {
     padding: 100px 0 20px 0;
   }
-}
-
-
-/*--==========================
-    card equipe
-  ============================*/
-
-section.card {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  perspective: 1000px;
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  will-change: transform, box-shadow;
-}
-.card svg {
-  fill: #000;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.0);
-  border-radius: 3px;
-}
-.card:hover {
-  transform: translateZ(0) scale(1.01);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-  background-color: #f2f2f2;
-  color: #ffffff;
-}
-
-.card__content {
-  color: #000000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card:hover .card__content {
-  transform: rotateX(0deg);
-}
-
-.card__title {
-  margin: 0;
-  padding-left: 5px;
-  font-size: 24px;
-  color: #000000;
-  font-weight: 700;
-}
-
-.card:hover svg {
-  scale: 0;
-}
-
-.card__description {
-  margin: 10px 0 0;
-  font-size: 14px;
-  color: #000000;
-  line-height: 1.4;
-}
-
-.card {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
