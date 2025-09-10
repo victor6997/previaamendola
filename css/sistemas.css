@@ -11,7 +11,6 @@
   transition: transform 420ms cubic-bezier(.22,1,.36,1);
   border-radius: 15px; /* arredonda os cards */
   background: transparent; /* cor de fundo do card */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* item aberto: sobe levemente */
@@ -21,22 +20,22 @@
 
 /* item fechando: desce um pouco para cobrir */
 .accordion-item.closing {
-  transform: translateY(8px);
+  transform: translateY(5px);
 }
 
 /* header */
 .accordion-header {
   background-color: #FD7A02;
-  color: #fff;
-  padding: 15px;
+   padding: 15px;
   cursor: pointer;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 1000px;
+  border-radius: 15px; /* arredonda junto com o card */
   user-select: none;
-  transition: box-shadow 240ms ease;
+  transition: box-shadow 150ms ease; /* sombra some rápido */
+  color: #fff;
 }
 
 /* sombra quando ativo */
@@ -65,7 +64,7 @@
   overflow: hidden;
   padding: 0 20px;
   box-sizing: border-box;
-  background: #fff;
+   background: transparent;
   color: #444;
   transform: translateY(-6px);
 }
@@ -93,4 +92,8 @@
 }
 .details-btn:hover {
   background-color: #FD7A02;
+}
+
+.accordion-content .texto {
+  padding: 15px;
 }
