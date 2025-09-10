@@ -121,3 +121,43 @@
 
 })(jQuery);
 
+$(document).ready(function () {
+
+  // Dropdown Mobile
+  $('.main-nav .drop-down > a').on('click', function(e) {
+    if ($(window).width() <= 991) { // mobile
+      e.preventDefault();
+      var parent = $(this).parent();
+      var submenu = parent.find('ul.dropdown-menu').first();
+      parent.toggleClass('active');
+      submenu.slideToggle(300);
+    }
+  });
+
+  // Dropdown Desktop - hover
+  $('.main-nav .drop-down').hover(function(){
+    if ($(window).width() > 991) {
+      $(this).children('.dropdown-menu').stop(true, true).fadeIn(200);
+    }
+  }, function(){
+    if ($(window).width() > 991) {
+      $(this).children('.dropdown-menu').stop(true, true).fadeOut(200);
+    }
+  });
+
+  // Marca item ativo
+  var path = window.location.pathname.split("/").pop();
+  if (path === "") path = "index.html";
+
+  $('.main-nav li').removeClass('active');
+  $('.main-nav a').each(function () {
+    var href = $(this).attr('href');
+    if (href === path) {
+      $(this).parent('li').addClass('active');
+      $(this).closest('.drop-down').addClass('active');
+    }
+  });
+
+});
+
+
