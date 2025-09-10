@@ -320,77 +320,6 @@ h6 {
   font-weight: 500;
 }
 
-.main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
-  color: #FF7A00;
-  text-decoration: none;
-}
-
-.main-nav .drop-down ul {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: calc(100% + 30px);
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  padding: 10px 0;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: ease all 0.3s;
-}
-
-.main-nav .drop-down:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.main-nav .drop-down li {
-  min-width: 180px;
-  position: relative;
-}
-
-.main-nav .drop-down ul a {
-  padding: 10px 20px;
-  font-size: 13px;
-  color: #000000;
-}
-
-.main-nav .drop-down ul a:hover,
-.main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
-  color: #FF7A00;
-}
-
-.main-nav .drop-down > a:after {
-  content: "\f107";
-  font-family: FontAwesome;
-  padding-left: 10px;
-}
-
-.main-nav .drop-down .drop-down ul {
-  top: 0;
-  left: calc(100% - 30px);
-}
-
-.main-nav .drop-down .drop-down:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-}
-
-.main-nav .drop-down .drop-down > a {
-  padding-right: 35px;
-}
-
-.main-nav .drop-down .drop-down > a:after {
-  content: "\f105";
-  position: absolute;
-  right: 15px;
-}
-
 /* Mobile Navigation (mexer pelo celular) */
 
 .mobile-nav {
@@ -495,6 +424,7 @@ h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # sobre nós
@@ -789,23 +719,6 @@ h6 {
   flex-wrap: wrap;
   justify-content: space-between; /* ou space-between (espaço entre) */
   gap: 1px;
-}
-
-#why-us .card .readmore {
-  color: #000000;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #ffffff solid 2px;
-}
-#why-us .card:hover .readmore {
-  color: #ffffff;
-    transition: 0.3s ease-in-out;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #005352 solid 2px;
-    transition: 0.3s ease-in-out;
 }
 
 #why-us .counters {
