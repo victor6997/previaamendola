@@ -1,0 +1,96 @@
+/* ====== Acordeão (animação suave: card sobe, texto desce, card cobre ao fechar) ====== */
+.accordion {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px; /* menos espaço entre os cards */
+  position: relative;
+  transition: transform 420ms cubic-bezier(.22,1,.36,1);
+  border-radius: 15px; /* arredonda os cards */
+  background: transparent; /* cor de fundo do card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* item aberto: sobe levemente */
+.accordion-item.open {
+  transform: translateY(-8px);
+}
+
+/* item fechando: desce um pouco para cobrir */
+.accordion-item.closing {
+  transform: translateY(8px);
+}
+
+/* header */
+.accordion-header {
+  background-color: #FD7A02;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1000px;
+  user-select: none;
+  transition: box-shadow 240ms ease;
+}
+
+/* sombra quando ativo */
+.accordion-item.open .accordion-header {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.accordion-item.closing .accordion-header {
+  box-shadow: 0 12px 26px rgba(0,0,0,0.14);
+}
+
+/* ícone */
+.icon {
+  font-size: 1.2em;
+  transition: transform 200ms ease;
+}
+
+/* Conteúdo */
+.accordion-content {
+  background: transparent;
+  margin-top: 0; 
+  max-height: 0;
+  padding: 200px;
+  transition: all 0.4s ease;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #444;
+  transform: translateY(-6px);
+}
+
+/* Quando aberto */
+.accordion-item.open .accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* botão */
+.details-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+.details-btn:hover {
+  background-color: #FD7A02;
+}
