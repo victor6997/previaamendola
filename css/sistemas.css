@@ -1,4 +1,9 @@
 /* ====== Acordeão (animação suave: card sobe, texto desce, card cobre ao fechar) ====== */
+html {
+  scrollbar-gutter: stable;
+}
+
+
 .accordion {
   font-family: Arial, sans-serif;
   max-width: 1200px;
@@ -66,6 +71,7 @@
   box-sizing: border-box;
    background: transparent;
   color: #444;
+  transform: translateY(-6px);
 }
 
 /* Quando aberto */
