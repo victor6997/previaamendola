@@ -1,8 +1,8 @@
 /* ====== Acordeão (animação suave: card sobe, texto desce, card cobre ao fechar) ====== */
 html {
+  overflow-y: scroll;
   scrollbar-gutter: stable;
 }
-
 
 .accordion {
   font-family: Arial, sans-serif;
