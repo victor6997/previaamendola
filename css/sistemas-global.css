@@ -1,0 +1,214 @@
+.accordion {
+  font-family: Arial, sans-serif;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px; /* menos espaço entre os cards */
+  position: relative;
+  transition: transform 420ms cubic-bezier(.22,1,.36,1);
+  background: transparent; /* cor de fundo do card */
+}
+
+/* item aberto: sobe levemente */
+.accordion-item.open {
+  transform: translateY(-8px);
+}
+
+/* item fechando: desce um pouco para cobrir */
+.accordion-item.closing {
+  transform: translateY(5px);
+}
+
+/* header */
+.accordion-header {
+  background-color: #FD7A02;
+   padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; /* arredonda junto com o card */
+  user-select: none;
+  transition: box-shadow 150ms ease; /* sombra some rápido */
+  color: #fff;
+}
+
+/* sombra quando ativo */
+.accordion-item.open .accordion-header {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.accordion-item.closing .accordion-header {
+  box-shadow: 0 12px 26px rgba(0,0,0,0.14);
+}
+
+/* ícone */
+.icon {
+  font-size: 1.2em;
+  transition: transform 200ms ease;
+}
+
+/* Conteúdo */
+.accordion-content {
+  background: transparent;
+  margin-top: 0; 
+  max-height: 0;
+  padding: 200px;
+  transition: all 0.4s ease;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
+   background: transparent;
+  color: #444;
+  transform: translateY(-6px);
+}
+
+/* Quando aberto */
+.accordion-item.open .accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* botão */
+.details-btn {
+  margin-top: 1px;
+  padding: 7px 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  display: inline-block;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.75s ease;
+}
+.details-btn:hover {
+  background-color: #000000;
+}
+
+.accordion-content .texto {
+  padding: 15px;
+}
+
+#intro-sistemas {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  padding: 50px 0 120px 0;
+}
+
+#intro-sistemas .intro-img {
+  width: 50%;
+  float: right;
+}
+
+#intro-sistemas .intro-info {
+  width: 50%;
+  float: left;
+}
+
+#intro-sistemas .intro-info h2 {
+  color: #005352;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro-sistemas .intro-info h2 span {
+  color: #005352;
+  text-decoration: underline;
+}
+
+#intro-sistemas .intro-info .btn-sistemas,
+#intro-sistemas .intro-info .btn-sistemas {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+#intro-sistemas .intro-info .btn-sistemas {
+  background: #005352;
+  border: 2px solid #005352;
+  color: #fff;
+}
+
+#intro-sistemas .intro-info .btn-sistemas:hover {
+  background: none;
+  border-color: #005352;
+  color: #005352;
+}
+
+#intro-sistemas .intro-info .btn-services {
+  border: 2px solid #fff;
+}
+
+#intro-sistemas .intro-info .btn-services {
+  background: #005352;
+  border-color: #005352;
+  color: #fff;
+}
+
+#intro-sistemas .intro-info .btn-services:hover {
+  background: none;
+  border-color: #ffffff;
+  color: #fff;
+}
+
+#sistemas {
+  scroll-margin-top: 100px; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 83, 82, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 83, 82, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 83, 82, 0);
+  }
+}
+
+.btn-sistemas {
+  animation: pulse 6s infinite;
+}
+
+.btn-sistemas {
+  animation: pulse 6s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-sistemas:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 24px rgba(0, 83, 82, 0.4);
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
