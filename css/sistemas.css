@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
   padding-top: 100px;
-  background-color: #F8F8F8; /* fundo mais suave */
+  background-color: #F8F8F8; 
   padding-bottom: 80px;
 }
 
@@ -79,6 +79,32 @@ display: flex;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: all 0.7s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .icons-container {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    gap: 40px; /* Ajuste de espaço entre os itens */
+    padding: 40px 5%;
+  }
+   .icon-wrapper {
+    width: 80%; 
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .integracoes {
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+
+  .integracoes .bloco {
+    width: 100%;
+  }
 }
 
 .icon-wrapper:hover {
