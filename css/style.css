@@ -563,84 +563,6 @@ h6 {
 /* Sistemas
 --------------------------------*/
 
-#services {
-  padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
-}
-
-#services .box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 10px 40px 10px;
-  background: #ffffff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-  transition: all 0.3s ease-in-out;
-  min-height: 250px; 
-  display: flex;
-  flex-direction: column;
-}
-
-/* Para telas pequenas (ex: celulares) */
-@media (max-width: 768px) {}
-  #services .box {
-    min-height: auto; /* Remove altura mínima */
-    height: auto;
-  }
-  #services .description {
-    display: block;
-    -webkit-line-clamp: unset;
-    overflow: visible;
-  }
-
-  #services .icon {
-    position: static;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  #services .icon img {
-    display: inline-block;
-    margin: 0;
-  }
-
-
-#services .box:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
-#services .icon {
-  position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
-}
-
-#services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#services .title a {
-  color: #111;
-}
-
-#services .description {
-  font-size: 20px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
 #why-us .col-lg-4 {
   flex: 1 1 300px; 
   max-width: 400px; 
@@ -671,7 +593,7 @@ h6 {
 }
 
 #why-us .card {
-  flex: 1 1 700px; /* Cresce, encolhe, com base de 300px */
+  flex: 1 1 700px; 
   min-height: 250px;
   display: flex;
   flex-direction: column;
@@ -717,7 +639,7 @@ h6 {
 #why-us .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* ou space-between (espaço entre) */
+  justify-content: space-between;
   gap: 1px;
 }
 
@@ -789,7 +711,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center; 
-  margin: 20px; /* aumenta o espaçamento ao redor de cada logo */
+  margin: 20px;
 }
 
 #clients .client-logo img {
@@ -895,16 +817,12 @@ h6 {
   background: #FD7A02;
   padding: 0px 0px 30px 0px;
   color: #eee;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #footer .footer-top {
   background: #FD7A02;
   padding: 60px 0 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1045,3 +963,24 @@ h6 {
     padding: 100px 0 20px 0;
   }
 }
+
+/* Scrollbar grossa e personalizada para navegadores WebKit (Chrome, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 15px;             /* LARGURA da barra vertical */
+  height: 2px;            /* ALTURA da barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;     /* Fundo da "trilha" */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F7B733;  /* Cor do "ponteiro" da barra */
+  border-radius: 50px;         /* Bordas arredondadas */
+  border: 3px solid #f1f1f1;  /* Borda interna da barra para dar efeito de espaço */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e59e00;  /* Cor ao passar o mouse */
+}
+
