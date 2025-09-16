@@ -53,7 +53,16 @@ h6 {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 30px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loadingspinner div {
@@ -862,11 +871,12 @@ h6 {
 }
 
 
-
 #why-us .card i {
   font-size: 48px;
   padding-top: 15px;
   color: #000000;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
 #why-us .card:hover i {
@@ -882,6 +892,7 @@ h6 {
 #why-us .card p {
   font-size: 15px;
   color: #000000;
+  font-weight: 700;
 }
 #why-us .card:hover p {
   color: #ffffff;
@@ -924,6 +935,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #000000;
+  font-weight: 900;
 }
 
 /* Para telas menores que 768px */
@@ -1234,5 +1246,43 @@ h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #e59e00;  /* Cor ao passar o mouse */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #767676;
+  color: #767676;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: -1.5rem;
+  height: 30px;
+  width: 12rem;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #767676;
+  font-size: 14px;
+}
+
+.search__button {
+  border: none;
+  background-color: #fff;
+  margin-top: 0.1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search input:focus {
+  outline: none;
 }
 

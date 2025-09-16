@@ -83,13 +83,14 @@ display: flex;
 
 @media (max-width: 768px) {
   .icons-container {
-    flex-direction: column; /* Empilha os itens verticalmente */
-    gap: 40px; /* Ajuste de espaço entre os itens */
+    flex-direction: column; 
+    gap: 60px; 
     padding: 40px 5%;
   }
    .icon-wrapper {
-    width: 80%; 
+    width: 90%; 
     text-align: center;
+    margin: 0 auto;
   }
 
   .features {
@@ -103,7 +104,8 @@ display: flex;
   }
 
   .integracoes .bloco {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -330,8 +332,10 @@ display: flex;
   }
 
   .features {
-    flex-direction: column;
-    padding: 40px 5%;
+    flex-direction: row;
+    padding: 4px 2%;
+    margin: 0 auto auto auto;
+    width: 100%;
   }
 
   .integracoes {
@@ -368,5 +372,46 @@ display: flex;
 
 * {
   box-sizing: border-box;
+}
+
+button {
+ display: flex;
+ height: 4em;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ background-color: #eeeeee4b;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+ margin-bottom: 3rem;
+}
+button > span {
+font-size: 20px;
+text-transform: uppercase;
+font-weight: 900;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+ Arial, sans-serif;
+}
+
+button > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+
+}
+
+button:hover > svg {
+ font-size: 5.2em;
+ transform: translateX(-5px);
+}
+
+button:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
 }
 
