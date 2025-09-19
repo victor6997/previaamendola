@@ -466,7 +466,7 @@ body {
 
 /* LOGO */
 .logo img {
-  max-height: 60px;
+  max-height: 50px;
   transition: max-height 0.3s ease;
 }
 
@@ -497,13 +497,6 @@ body {
 }
 
 /* BUSCA */
-.search {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 20px;
-}
-
 .search__input {
   padding: 6px 10px;
   border: 1px solid #ccc;
@@ -532,6 +525,7 @@ body {
     display: none;
   }
 }
+
 /*--------------------------------------------------------------
 # Intro(
 --------------------------------------------------------------*/
@@ -670,8 +664,8 @@ margin-left: auto;
   bottom: 0;
   z-index: 9999;
   overflow-y: auto;
-  left: -260px;
-  width: 260px;
+  left: -400px;
+  width: 300px;
   padding-top: 18px;
   background: rgba(0, 0, 0, 0.8);
   transition: 0.4s;
@@ -686,7 +680,7 @@ margin-left: auto;
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 20px;
   font-weight: 500;
 }
@@ -765,7 +759,7 @@ margin-left: auto;
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
-}
+} 
 
 /* Sections Header (Cabeçalho das seções)
 --------------------------------*/
