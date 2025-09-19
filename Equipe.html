@@ -33,32 +33,42 @@
 
 <body>
 
-   <!--==========================
+    <!--==========================
   Header  (CABEÇALHO)
   ============================-->
- <!-- #header -->
-<header id="header" class="fixed-top">
-  <div class="spacer-header">
-    <div class="container">
+ <header id="header" class="fixed-top">
+  <div class="container header-inner">
 
-      <div class="logo float-left">
-        <a href="index.html" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-     <nav class="main-nav float-right d-none d-lg-block">
-  <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html#about">Sobre</a></li>
-<li><a href="Equipe.html">Equipe</a></li>
-<li><a href="clientes.html" target="_blank">Clientes</a></li>
-<li><a href="sistema.html">Sistemas</a></li>
-<li><a href="index.html#contact">Entre em contato</a></li>
-<li><a href="https://amendola.flowdocs.com.br:2053/public/home" target="_blank">Abra seu chamado</a></li>
-  </ul>
-</nav>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo" class="img-fluid"></a>
     </div>
-    </header>
 
+    <!-- Navegação -->
+    <nav class="main-nav d-none d-lg-flex">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="Equipe.html">Equipe</a></li>
+        <li><a href="clientes.html" target="_blank">Clientes</a></li>
+        <li><a href="sistema.html">Sistemas</a></li>
+        <li><a href="https://amendola.flowdocs.com.br:2053/public/home" target="_blank">Abra seu chamado</a></li>
+          <!-- Campo de busca -->
+    <div class="search">
+      <input placeholder="Pesquisar" class="search__input" type="text" />
+      <button class="search__button">
+        <svg viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" height="16" width="16"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+          </path>
+        </svg>
+      </button>
+    </div>
+      </ul>
+    </nav>
+  </div>
+</header>
     <!--==========================
       Team Section (Seção de equipe)
     ============================-->
