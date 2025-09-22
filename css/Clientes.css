@@ -1,15 +1,14 @@
 /*--==========================
     card equipe
   ============================*/
-
 /*tamanho do card*/
 .card-team {
   width: 235px;
-  height: 165px;;
+  height: 165px;
   background: #f5f5f5;
   padding: 2rem 5px;
-  transition: box-shadow .3s ease, transform .2s ease;
-  box-shadow: 0 1px 10px #00000033;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -17,9 +16,9 @@
 /*lado do card*/
 .cards-container {
   display: flex;
-  gap: 40px; 
-  justify-content: center; 
-  flex-wrap: wrap; 
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-left: 10px;
 }
 
@@ -29,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .card-title {
@@ -46,24 +45,14 @@
 }
 
 .card-team:hover {
-  box-shadow: 0 8px 50px #23232333;
+  box-shadow: 0 8px 50px rgba(35, 35, 35, 0.2);
 }
 
 .card-team:hover .card-info-team {
   transform: translateY(-10%);
 }
 
-.back {
-  position: relative;
-  height: 100%; 
-  background-image: url('/img/predios.jpeg');
-  background-size: 100%;
-  background-position: center;
-  display: flex;
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-  z-index: 1;
-}
+
 
 .back .overlay {
   content: "";
@@ -71,11 +60,13 @@
   inset: 0;
 }
 
+/* Seção de clientes */
 .intro-info-client {
   width: 50%;
   float: left;
 }
 
+/* Seção inicial */
 #intro-client {
   width: 100%;
   background: url("../img/predios.jpeg") center bottom no-repeat;
@@ -102,6 +93,22 @@ h2 span {
   color: #000000 !important;
   font-size: 15px !important;
   font-weight: 900 !important;
-  line-height: 1rem !important;
+  line-height: 0,5rem !important;
   text-align: center !important;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .card-team {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #intro-client {
+    padding: 100px 10px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
 }
