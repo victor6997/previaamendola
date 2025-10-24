@@ -19,6 +19,7 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/451cb2eed6.js" crossorigin="anonymous"></script>
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -34,7 +35,7 @@
 
 <body>
 
-  <!--==========================
+    <!--==========================
   Header  (CABEÇALHO)
   ============================-->
  <header id="header" class="fixed-top">
@@ -50,24 +51,26 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="Equipe.html">Equipe</a></li>
-        <li><a href="clientes.html" target="_blank">Clientes</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
         <li><a href="sistema.html">Sistemas</a></li>
         <li><a href="https://amendola.flowdocs.com.br:2053/public/home" target="_blank">Abra seu chamado</a></li>
           <!-- Campo de busca -->
-   <div class="search">
-    <input type="text" class="search__input" placeholder="Type your text">
-    <button class="search__button">
-        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-            <g>
-                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-            </g>
+    <div class="search">
+      <input placeholder="Pesquisar" class="search__input" type="text" />
+      <button class="search__button">
+        <svg viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" height="16" width="16"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+          </path>
         </svg>
-    </button>
-</div>
+      </button>
+    </div>
       </ul>
     </nav>
   </div>
 </header>
+
  <!-- Sistema-titulo -->
   <div class="sistema-titulo">
   <div class="banner-text">
@@ -114,19 +117,20 @@
 
 
 
- <!-- SEÇÃO DETALHADA DO SIS -->
+<!-- SEÇÃO COMPLEMENTAR DO SAS -->
 <section class="features">
   <div class="column">
-    <h3>Controle Total da Farmácia</h3>
-    <p>Administre a distribuição de medicamentos com eficiência através de um módulo farmacêutico desenvolvido para atender às necessidades dos gestores públicos. Controle a entrega, estoque e movimentação dos medicamentos nas farmácias do município, integrado aos demais módulos do sistema.</p>
+    <h3>Alertas que Melhoram os Resultados</h3>
+    <p>
+      O SAS foi projetado para atender às necessidades dos usuários das entidades públicas, facilitando o dia a dia e otimizando os resultados. Com avisos e alertas exibidos na tela inicial, os usuários conseguem visualizar rapidamente atendimentos e visitas agendadas, encaminhamentos recebidos e participantes com data de encerramento próxima em projetos sociais.
+    </p>
   </div>
+
   <div class="column">
-    <h3>Prontuário Eletrônico Completo</h3>
-    <p>Proporcione aos profissionais uma gestão completa do atendimento ao paciente, desde o agendamento até o histórico clínico. Visualize documentos, encaminhamentos, solicitações de exames e demais informações essenciais em um único ambiente digital.</p>
-  </div>
-  <div class="column">
-    <h3>Relatórios e Indicadores</h3>
-    <p>Tenha acesso a relatórios detalhados para análise de desempenho, produção, faturamento e gestão clínica, facilitando a tomada de decisões estratégicas e o aprimoramento contínuo dos serviços de saúde.</p>
+    <h3>Unificação das Telas</h3>
+    <p>
+      Entendendo a rotina dos nossos clientes, o SAS oferece ambientes integrados que otimizam o uso do sistema e do tempo do profissional. A partir da tela de atendimentos é possível conceder benefícios, vincular a projetos, agendar novos atendimentos ou visitas, além de realizar encaminhamentos para outros profissionais ou unidades, tudo de forma prática e centralizada.
+    </p>
   </div>
 </section>
 
@@ -136,106 +140,60 @@
   <div class="bloco">
     <h3><i class="fas fa-plug"></i> Integrações com sistemas externos</h3>
     <ul>
-      <li><i class="fas fa-check"></i> <strong>BPAMAG</strong> – Boletim de Produção Ambulatorial, para controle detalhado dos atendimentos ambulatoriais.</li>
-      <li><i class="fas fa-check"></i> <strong>SISAIH01</strong> – Programa de apoio para entrada de dados das autorizações de internações hospitalares.</li>
-      <li><i class="fas fa-check"></i> <strong>CIHA</strong> – Sistema de Comunicação de Informação Hospitalar e Ambulatorial.</li>
-      <li><i class="fas fa-check"></i> <strong>ESUS AB</strong> – Sistema para registro e gestão da Atenção Básica à Saúde.</li>
-      <li><i class="fas fa-check"></i> <strong>RAAS</strong> – Registro das Ações Ambulatoriais de Saúde.</li>
-      <li><i class="fas fa-check"></i> <strong>BNDASAF</strong> – Base Nacional de Dados de Ações e Serviços da Assistência Farmacêutica.</li>
-      <li><i class="fas fa-check"></i> <strong>Padrão TISS</strong> – Troca de Informações na Saúde Suplementar.</li>
-      <li><i class="fas fa-check"></i> <strong>SISAIH</strong> – Sistema Gerador do Movimento das Unidades Hospitalares.</li>
-      <li><i class="fas fa-check"></i> <strong>HORUS</strong> – Sistema Nacional de Gestão da Assistência Farmacêutica.</li>
-      <li><i class="fas fa-check"></i> <strong>Qualifar-SUS</strong> – Programa de Qualificação da Assistência Farmacêutica no SUS.</li>
-      <li><i class="fas fa-check"></i> <strong>CNS</strong> – Cartão Nacional do SUS.</li>
-    </ul>
-  </div>
-
- <div class="bloco">
-    <h3><i class="fas fa-retweet"></i> Integrações entre sistemas Fiorilli</h3>
-    <ul>
-      <li>
-        <i class="fas fa-check"></i> 
-       <a href="SIA.html"> <strong class="laranja">Sistema Integrado de Arrecadação</strong><br></a>
-        <span>
-          Importa requisições de saída do modulo Compras.
-
-        </span>
-      </li>
+      <li><i class="fas fa-check"></i> <strong>CadÚnico </strong> – Cadastro Único para Programas Sociais.</li>
     </ul>
   </div>
 </section>
 
 
 
-<!-- Funcionalidades Flowdocs -->
-
+<!-- FUNCIONALIDADES - ASSISTÊNCIA SOCIAL -->
 <section class="functionalities">
   <h2>Algumas funcionalidades do sistema</h2>
   <div class="functionalities-container">
+
     <div class="functionality">
-      <h3>AMBULATÓRIO</h3>
-      <p>Nosso módulo de atendimento ambulatorial possui ficha completa do paciente, com informações pessoais, endereço e características do domicílio, documentação, programas sociais, prontuários,
-         fotos e ainda permite a inserção de documentos digitais. Regras e que evitam duplicidade no cadastramento dos pacientes, biometria e o usuário ainda pode contar com um motor de busca por fonética. Ainda possuímos cadastro de população flutuante.
-         No caso de prontuários físicos nosso sistema permite o controle total possibilitando trabalhar com várias unidades interligadas.
-         Você ainda pode optar pela importação dos dados dos pacientes diretamente da base nacional do Cartão SUS.
-        </p>
+      <h3>Cadastros</h3>
+      <p>No SAS, os cadastros seguem o modelo do Cadastro Único para Programas Sociais do Governo Federal, oferecendo um diagnóstico socioeconômico completo das famílias. Isso possibilita uma análise precisa das principais necessidades da população cadastrada.</p>
     </div>
+
     <div class="functionality">
-      <h3>FARMÁCIA</h3>
-      <p>O módulo de farmácia trás um gerenciamento completo do estoque de medicamentos e materiais das unidades de saúde, possibilitando ainda o gerenciamento dos produtos por lotes, validades e estoque mínimo.
-          Permitimos o lançamento das entradas, saídas e transferências de produtos entre unidades, contendo informações referentes a fornecedores, pacientes e lotes, tornando possível a emissão do balancete que é apresentado ao Tribunal de Contas do Estado.
-          Contamos com integração com o Qualifar-SUS e BNDASAF via webservice, gerando arquivos para posterior transmissão, com todas as informações necessárias referentes ao estoque, às entradas, dispensação perdas dos medicamentos nas unidades farmacêuticas, dispensando assim o uso do HORUS.</p>
+      <h3>Projetos e Programas Sociais</h3>
+      <p>Gerencie de forma dinâmica os projetos e programas sociais da instituição. Controle vigência, valores, regras de participação (idade, exclusividade, parentesco), evitando duplicidade de benefícios. Consulte o histórico completo de participação da pessoa ou da família em ações sociais.</p>
     </div>
+
     <div class="functionality">
-      <h3>LABORATÓRIO</h3>
-      <p>Gerenciamento laboratorial completo, indo desde a abertura da requisição e coleta até o lançamento dos resultados, conferencia e confecção do laudo.
-         Nossas tabelas e fórmulas de cálculo são totalmente customizáveis. Isso permite lançamento dos resultados dos exames laboratoriais, com seus respectivos valores normais que podem ser variáveis dependendo do sexo e idade do paciente.
-         Administre rotinas de revisão e conferência eletrônica dos exames realizados.
-         Possuímos interfaceamento com os aparelhos de análise mais utilizados do mercado, isso permite automação dos laudos.</p>
+      <h3>Concessão de Benefícios</h3>
+      <p>Gerencie requerimentos e concessões de forma eficaz. Visualize histórico de benefícios já recebidos, datas, valores, pareceres e profissionais envolvidos, evitando sobreposição e facilitando a análise completa antes de novas concessões.</p>
     </div>
+
     <div class="functionality">
-      <h3>AGENTES COMUNITÁRIOS</h3>
-      <p>Nós possuímos um módulo específico para gerenciamento dos pacientes e domicílios pelos agentes comunitários de saúde. Os agentes poderão utilizar aplicativos mobile para realização das visitas domiciliares.</p>
+      <h3>Despesas</h3>
+      <p>Controle integrado das despesas familiares, acessível tanto no cadastro da família quanto nas visitas domiciliares. Esses dados ajudam na construção automática do perfil financeiro da família.</p>
     </div>
+
     <div class="functionality">
-      <h3>VACINAS</h3>
-      <p>Gerencie o calendário de vacinação através de parâmetros que  servirão de base para o controle de doses aplicadas aos pacientes nos atendimentos de rotina. Além disso, permita o cadastro e o agendamento de vacinas e controle de faltosos.</p>
+      <h3>Visitas Domiciliares</h3>
+      <p>Gerencie todo o ciclo das visitas domiciliares: agendamentos, motivo da visita, composição familiar, parecer social, despesas, condição financeira, profissional responsável e muito mais. Tudo registrado de forma clara e integrada ao sistema.</p>
     </div>
+
     <div class="functionality">
-      <h3>VIAGENS</h3>
-      <p>Nosso sistema possui controle completo de viagens, desde o agendamento até a realização permitindo controlar o veículo, motorista, rota, passageiros, acompanhantes, despesas no trajeto gerando faturamento automaticamente do transporte realizado.</p>
+      <h3>Contratos e Subvenções</h3>
+      <p>Controle completo dos contratos firmados com entidades que recebem recursos da Assistência Social. Gerencie as concessões, valores, origens dos recursos, documentos fiscais e saldos contratuais de forma automatizada.</p>
     </div>
+
     <div class="functionality">
-      <h3>HOSPITAL</h3>
-      <p>Faça a gestão das internações hospitalares SUS ou de convênios, desde a chegada do paciente ao hospital até a sua alta e ainda administre a emissão de laudo médico, evolução clínica do paciente, evolução social, prescrição médica, alta, encerramento e emita diversos documentos que podem ser customizados de acordo com a sua necessidade.</p>
+      <h3>Atendimentos</h3>
+      <p>Realize atendimentos centralizados em uma única tela com acesso ao histórico da família, dados cadastrais, visitas, programas sociais, benefícios concedidos, e ações rápidas como agendamento, concessões, projetos e encaminhamentos.</p>
     </div>
-    <div class="functionality">
-      <h3>BANCO DE SANGUE</h3>
-      <p>Módulo para o gerenciamento do estoque de bolsas de sangue, desde o recebimento delas até a sua utilização e organizando-as pela sua situação. Administre e gerencie o cadastro de doadores, faça um controle por aptidão e histórico de doações, podendo de forma inteligente, sugerir o agendamento da próxima doação.</p>
-    </div>
-    <div class="functionality">
-  <h3>ZOONOSES</h3>
-  <p>Módulo para controle de zoonoses contendo o cadastro completo dos animais do município sujeitos a regulação municipal, permitindo inclusive o registro de vacinação.
-      Registre e emita laudos dos exames realizados nos animais e faça posterior lançamento para análise do resultado de diagnose em animais com risco de infecção.</p>
-</div>
-<div class="functionality">
-  <h3>VIGILÂNCIA SANITÁRIA</h3>
-  <p>O Sistema possui módulo exclusivo para o gerenciamento dos estabelecimentos do município sujeitos a vigilância sanitária. Permite ainda que sejam administradas as rotinas e produção dos agentes sanitários integrando ao faturamento Ambulatorial.
-     Nesse quesito o SIS oferece recursos que vão desde o agendamento e realização de visitas inclusive detalhando a situação conclusiva do estabelecimento, se será interditado, risco oferecido e prazo para adequação quando necessário.</p>
-</div>
-<div class="functionality">
-  <h3>FATURAMENTO</h3>
-  <p>Considerado o melhor sistema de faturamento do mercado, nosso sistema realiza a consistência dos dados de produção, principalmente em relação aos procedimentos e suas regras de compatibilidade como entre procedimento e CID. Dessa forma evitamos a glosa no faturamento já no ato do lançamento.
-     Possui integrações com sistemas reguladores, permitindo a sincronização de tabelas cruciais para o faturamento da produção. Dentre elas estão as tabelas de procedimentos SUS através do BPAMAG e/ou do SISAIH ou de convênios como as tabelas TUSS, AMB92, CBHPM entre outras não menos importantes como a de medicamentos e materiais do Brasindice, ABCFarma, CATMAT, SIMPRO e etc.</p>
-</div>
 
   </div>
 </section>
 
-  </section>
+
   <section id="voltar">
-  <button onclick="window.history.back()">
-    <svg height="26" width="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <button class="btn-voltar" onclick="window.history.back()" >
+    <svg height="26" width="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" >
       <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path>
     </svg>
     <span>voltar</span>
@@ -243,7 +201,7 @@
 </section>
 
 
-  <!--==========================
+ <!--==========================
     Footer (Rodapé)
   ============================-->
   <footer id="footer">
@@ -259,7 +217,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Links Uteis</h4>
             <ul>
-             <li><a href="index.html">Home</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Serviços</a></li>
               <li><a href="#">Termos de Privacidade</a></li>
               <li><a href="#">Políticas de Privacidade</a></li>
             </ul>
@@ -277,10 +237,8 @@
 
             <div class="social-links">
               <a href="mailto:contato@amendola.net.br" ><i class="fa fa-envelope"></i></a>
-              <a href="https://br.linkedin.com/company/amêndola-&amp;-amêndola" target="_blank" class="linkedin">
-                <i class="fab fa-linkedin"></i>
-              </a>
-
+              <a href="https://br.linkedin.com/company/am%C3%AAndola-&-am%C3%AAndola" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+              <a href="carros.html"><i class="fa-solid fa-car"></i></a>
             </div>
           </div>
         </div>
@@ -327,5 +285,7 @@
 
 </body>
 </html>
+
+
 
    

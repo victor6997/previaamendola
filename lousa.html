@@ -17,7 +17,7 @@
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-   <!-- Libraries CSS Files -->
+  <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
  <script src="https://kit.fontawesome.com/451cb2eed6.js" crossorigin="anonymous"></script>
   <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -27,13 +27,24 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/carros.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/preloader.js"></script>
+
 </head>
 
 <body>
 
-   <!--==========================
+  <!-- Preloader -->
+<div class="loadingspinner">
+  <div id="square1"></div>
+  <div id="square2"></div>
+  <div id="square3"></div>
+  <div id="square4"></div>
+  <div id="square5"></div>
+</div>
+
+
+  <!--==========================
   Header  (CABEÇALHO)
   ============================-->
  <header id="header" class="fixed-top">
@@ -69,112 +80,85 @@
   </div>
 </header>
 
-<!--CARROS-->
+ 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Tabela de Veículos</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lousa Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #000;
+            background-color: white;
+            cursor: crosshair;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+ <style>
     body {
-      margin-top: 100px;
-      margin-bottom: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f9f9f9;
       font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+      margin-top: 250px;
+      margin-bottom: 250px;
     }
 
-    table {
-      border-collapse: collapse;
-      width: 60%;
-      text-align: center;
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      width: 90%;
+      height: 800px;
     }
 
-    th, td {
-      padding: 12px;
-      border: 1px solid #ccc;
-    }
 
-    thead {
-      background-color: #f2f2f2;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Número</th>
-        <th>Modelo</th>
-        <th>Placa</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>02</td>
-        <td>Voyage</td>
-        <td>EOD-6252</td>
-      </tr>
-      <tr>
-        <td>03</td>
-        <td>Voyage</td>
-        <td>BWW-2953</td>
-      </tr>
-      <tr>
-        <td>04</td>
-        <td>Voyage</td>
-        <td>FHY-9894</td>
-      </tr>
-      <tr>
-        <td>05</td>
-        <td>Gol</td>
-        <td>GCH-3945</td>
-      </tr>
-      <tr>
-        <td>06</td>
-        <td>Voyage</td>
-        <td>FXZ-4656</td>
-      </tr>
-      <tr>
-        <td>07</td>
-        <td>Voyage</td>
-        <td>GHI-0F27</td>
-      </tr>
-      <tr>
-        <td>08</td>
-        <td>Gol</td>
-        <td>FWR-9928</td>
-      </tr>
-      <tr>
-        <td>09</td>
-        <td>Gol</td>
-        <td>FCH-3939</td>
-      </tr>
-      <tr>
-        <td>—</td>
-        <td>Polo</td>
-        <td>FVV-6065</td>
-      </tr>
-      <tr>
-        <td>—</td>
-        <td>Yaris</td>
-        <td>SWH-9I21</td>
-      </tr>
-    </tbody>
-  </table>
+
+
+ 
+  <iframe src="https://calendar.google.com/calendar/embed?src=amendolasoftware%40gmail.com&ctz=America%2FSao_Paulo" 
+          style="border: 0" 
+          frameborder="0" 
+          scrolling="no">
+  </iframe>
+
+
+
+
+
+
 
 </body>
 </html>
 
-
-  
-
-    
 
